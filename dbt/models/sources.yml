@@ -1,0 +1,64 @@
+version: 2
+
+sources:
+  - name: raw
+    database: "{{ env_var('SNOWFLAKE_DATABASE', 'ANALYTICS') }}"
+    schema: RAW
+    tables:
+      - name: CRICKET
+        description: "Raw customer order transactions loaded from orders.csv"
+        columns:
+          - name: DELIVERY_ID 
+          - name: DELIVERY_TIMESTAMP
+          - name: INNING_NO
+          - name: OVER_NO
+          - name: BALL_IN_OVER
+          - name: RUNS_OFF_BAT
+          - name: EXTRA_TYPE
+          - name: EXTRA_RUNS
+          - name: TOTAL_RUNS
+          - name: IS_WICKET
+          - name: DISMISSAL_TYPE
+          - name: BALL_SPEED_KMPH
+          - name: NON_STRIKER_ID
+          - name: SHOT_TYPE
+          - name: SHOT_REGION
+          - name: MATCH_ID
+          - name: MATCH_DATE
+          - name: MATCH_FORMAT
+          - name: TOURNAMENT_NAME
+          - name: SEASON
+          - name: MATCH_STAGE
+          - name: TOSS_DECISION
+          - name: VENUE_ID
+          - name: VENUE_NAME
+          - name: VENUE_CITY
+          - name: VENUE_COUNTRY
+          - name: BATTING_TEAM_ID
+          - name: BATTING_TEAM_NAME
+          - name: BOWLING_TEAM_ID
+          - name: BOWLING_TEAM_NAME
+          - name: BATSMAN_ID
+          - name: BATSMAN_NAME
+          - name: BATSMAN_DOB
+          - name: BATSMAN_NATIONALITY
+          - name: BATTING_HAND
+          - name: BATSMAN_ROLE
+          - name: BATSMAN_EMAIL
+          - name: BATSMAN_PHONE
+          - name: BATSMAN_ICC_RATING
+          - name: BOWLER_ID
+          - name: BOWLER_NAME
+          - name: BOWLER_NATIONALITY
+          - name: BOWLING_STYLE
+          - name: BOWLER_ICC_RATING
+          - name: CONTRACT_ID
+          - name: CONTRACT_GRADE
+          - name: ANNUAL_RETAINER_USD
+          - name: CONTRACT_STATUS
+          - name: DRS_REVIEW_ID
+          - name: DRS_REVIEWED_BY
+          - name: DRS_ORIGINAL_DECISION
+          - name: DRS_OUTCOME
+          - name: _FILE_NAME
+          - name: _LOADED_AT

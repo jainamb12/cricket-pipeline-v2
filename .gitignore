@@ -1,0 +1,54 @@
+# ==========================================
+# Environment variables and secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# Data files - do not upload datasets
+# ==========================================
+data/
+
+# ==========================================
+# Apache Airflow logs and generated files
+# ==========================================
+logs/
+airflow.db
+airflow.cfg
+webserver_config.py
+
+# ==========================================
+# Python cache and compiled files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==========================================
+# dbt logs and generated artifacts
+# ==========================================
+dbt/logs/
+dbt/target/
+dbt/dbt_packages/
+dbt/.user.yml
+
+# ==========================================
+# dbt local profiles - exclude credentials
+# ==========================================
+dbt/profiles.yml
+
+# ==========================================
+# Python virtual environments
+# ==========================================
+venv/
+.venv/
+env/
+
+# ==========================================
+# IDE and operating system files
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
